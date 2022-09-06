@@ -1,0 +1,55 @@
+<!-- REGISTRATION PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+      <link rel="stylesheet" type="text/css" href="mini_project1.css" /> 
+      <title>Registration Form</title>    
+    </head>
+    <body class="register_bg">
+        <header>
+            <h1 class="regis_h1">REGISTRATION FORM</h1>
+        </header>
+        <main>
+            <div>
+              <form >
+                  <label>Name: <input type="text" placeholder="Enter Your Name" required></label><br><br>
+                  <label>Password: <input type="password" pattern="[A-Za-z0-9]{8,}" placeholder="min-8 (alphaNUMERIC)" required></label><br><br>
+                  <label>Confirm Password: <input type="password" required></label><br><br>
+                  <label>Phone Number: <input type="tel" placeholder="+91 1234567890" required></label><br><br>
+                  <label>E-mail id: <input type="email" placeholder="xxx@gmail.com" required></label><br><br>
+                  <label>Gender:
+                      <label><input type="radio" name="gender" id="female" value="female" vertical-align="middle" required>Female</label>
+                      <label><input type="radio" name="gender" id="male" value="male" vertical-align="middle" required>Male</label>
+                      <label><input type="radio" name="gender" id="not to specify" value="not to specify" vertical-align="middle" required>Not to specify</label>
+                  </label><br><br>
+                  <label>Date of Birth:<input type="date" max="2002-01-01" required></label><br><br>
+                  <fieldset >
+                      <legend>Languages Known:</legend>
+                      <label><input type="checkbox" name="lang" id="Kannada" value="Kannada" vertical-align="middle">Kannada </label>
+                      <label><input type="checkbox" name="lang" id="Telugu" value="Telugu" vertical-align="middle">Telugu </label>
+                      <label><input type="checkbox" name="lang" id="Hindi" value="Hindi" vertical-align="middle">Hindi </label>
+                      <label><input type="checkbox" name="lang" id="Tamil" value="Tamil" vertical-align="middle">Tamil </label>
+                      <label><input type="checkbox" name="lang" id="english" value="english"  vertical-align="middle">English </label>
+                  </fieldset><br><br>
+                  <label>Choose Your Continent:
+                      <select name="continent" required>
+                          <option value="">(select your continent)</option>
+                          <option value="1">Asia</option> 
+                          <option value="2">Africa</option>
+                          <option value="3">Europe</option>
+                          <option value="4">North America</option>
+                          <option value="5">South America</option>
+                          <option value="6">Australia</option>
+                          <option value="7">Antartica</option>
+                      </select>    
+                  </label><br><br>
+                  <a href="loginPage.html">Already had an account? --> LOGIN</a><br><br><br>
+                  <input type="submit" value="Submit" class="regis_button">
+                  <input type="reset" value="Reset" class="regis_button"><br>
+              </form>
+            </div>  
+        </main>
+    </body>
+</html>

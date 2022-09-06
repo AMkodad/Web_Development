@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css"  href="calciCSS.css" />
+        <script src="calciJS.js"></script>
+        <title>CASIO Calculator</title>
+    </head>
+    <body style="background-image: linear-gradient(90deg, rgb(94, 178, 94) , rgb(24, 208, 237))">
+        <header>
+            <h1 >CASIO</h1>
+        </header>
+        <main>
+            <div>
+                <table>
+                    <tr>
+                        <td colspan="3"><input type="text" id="display" style="font-size:25px"></td>
+                        <td><input type="button" value="C" class="buttonStyle" onclick="discard()"></td>
+                    </tr>
+                    <tr >
+                        <td><input type="button" value="1" class="buttonStyle" onclick="operation(1)"></td>
+                        <td><input type="button" value="2" class="buttonStyle" onclick="operation(2)"></td>
+                        <td><input type="button" value="3" class="buttonStyle" onclick="operation(3)"></td>
+                        <td><input type="button" value="/" class="buttonStyle" onclick="operation('/')"></td>
+                    </tr>
+                    <tr >
+                        <td><input type="button" value="4" class="buttonStyle" onclick="operation(4)"></td>
+                        <td><input type="button" value="5" class="buttonStyle" onclick="operation(5)"></td>
+                        <td><input type="button" value="6" class="buttonStyle" onclick="operation(6)"></td>
+                        <td><input type="button" value="-" class="buttonStyle" onclick="operation('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" class="buttonStyle" onclick="operation(7)"></td>
+                        <td><input type="button" value="8" class="buttonStyle" onclick="operation(8)"></td>
+                        <td><input type="button" value="9" class="buttonStyle" onclick="operation(9)"></td>
+                        <td><input type="button" value="+" class="buttonStyle" onclick="operation('+')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="." class="buttonStyle" onclick="operation('.')"></td>
+                        <td><input type="button" value="0" class="buttonStyle" onclick="operation(0)"></td>
+                        <td><input type="button" value="=" class="buttonStyle" onclick="calculation('=')"></td>
+                        <td><input type="button" value="*" class="buttonStyle" onclick="operation('*')"></td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>

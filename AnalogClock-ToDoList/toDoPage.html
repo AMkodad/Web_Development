@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="toDoPageCSS.css" />
+        <title>TO DO LIST</title>
+    </head>
+    <body >
+        <div class="analogClock">
+            <div id="h"></div>
+            <div id="min"></div>
+            <div id="sec"></div>
+        </div>
+        <script src="clockJS.js"></script>
+        <div class="toDoBlock bg-div" >
+            <br><br>
+            <h1>TO DO LIST</h1>
+            <div>
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="Eg: Pay utilities bill by friday 6pm" id="taskBox"></td>
+                        <td><button type="button" id="taskAdder">+</button></td>
+                    </tr>    
+                </table>
+                <br><br>
+                <div id="taskItems"></div>
+            </div>
+            <script >
+                let addButton = document.getElementById("taskAdder");
+                let taskDisplay = document.getElementById("taskBox");
+                let tasksToDo = document.getElementById("taskItems");
+    
+                addButton.addEventListener('click', function()
+                {
+                    var paragraph = document.createElement('p');
+                    paragraph.innerText = taskDisplay.value;
+                    if (paragraph.innerText == "")
+                    {
+                        alert("First type your task to complete in TASK-BOX then press the ADD button ");
+                    }
+                    else
+                    {
+                    paragraph.classList.add('paragraph-styling');
+                    tasksToDo.appendChild(paragraph);
+                    taskDisplay.value = "";
+                    } 
+                    paragraph.addEventListener('click', function(){
+                        paragraph.style.textDecoration = 'line-through';
+                    });
+
+                    paragraph.addEventListener('dblclick', function(){
+                        tasksToDo.removeChild(paragraph);
+                    });
+
+                });
+            </script>
+        </div>
+    </body>
+</html>

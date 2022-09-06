@@ -1,0 +1,85 @@
+body{
+    font-size: 23px;
+}
+
+.section1, .section2{
+    display: inline-block;
+}
+/* styling the main content of resume */
+.section1{
+    border: 10px solid black;
+    border-bottom-color: rgb(196, 189, 189);
+    width: 70%;
+    margin-left: 2.5vw;
+    padding: 5px;
+}
+/* styling the contact info of the resume */
+.section2{
+    float:right;
+    text-align: left;
+} 
+/* to remove bulllets of navigation bar */
+.navigation-block{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* here navigation-anchor is nothing but (li a) of navigation ul */
+.navigation-anchor {
+    display: block;  /* to change anchor elements from inline property to block property */
+    text-decoration: none;  /* to remove the underline of anchor elements */
+    padding: 25px 5px;
+    font-size: 3vw;
+    width: 20vw;
+    color: blue;
+    background-color: rgb(221, 211, 211);
+}
+
+.contact{
+    display: none; /* to make items of CONTACT in invisible mode */
+}
+
+.dropdown:hover .contact{
+    display: block; /* all the items should be visbile after hovering on the CONTACT */
+}
+
+.navigation-anchor:hover {
+    background-color: #FFFF00;
+    color: black;
+}
+
+.headline h1{
+    background-color: blue;
+    color:white; 
+    text-align: center; 
+    line-height: 100px;
+    padding: 25px auto; 
+    width: 85%;
+    vertical-align: middle;
+}
+
+.headline img{
+    width: 15%;
+}
+
+.headline h1, .headline img{
+    display:inline-block;
+}
+
+h3{
+    font-size: 30px;
+    background-color: rgb(221, 211, 211);
+}
+
+.on_hover:hover {
+    color:green;
+}
+/* to remove the triangle mark */
+summary{
+    display:inline;
+    cursor: pointer;
+}
+
+summary strong{
+    text-decoration: underline;
+}

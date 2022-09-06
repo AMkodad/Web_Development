@@ -1,0 +1,71 @@
+/* registration page background deco */
+.register_bg{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+/* login page background deco */
+.login_bg{
+    background-color: rgb(252, 168, 59);
+    font-size: 20px;
+}
+/* body css property of both registration page and login page */
+body{
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 18px;
+}
+/* h1 element css property of the registration page */
+.regis_h1{
+    text-align:  center;
+    background-color: white;
+    color: black;
+    border: 5px solid rgb(186, 146, 83) ;
+}
+/* border of div elements */
+div{
+    border: 12px solid rgb(186, 146, 83);
+    padding-top:10px;
+    padding-bottom:14px;   
+}
+/* making the form elements center of the page */
+form{
+    text-align:center;
+}
+/* removong the border of fieldset */
+fieldset{
+    border:none;
+}
+/* increasing the size of the input and select boxes */
+input,select{
+    min-height: 1.5em;
+}
+/* Login page submit button css property */
+.log_sub{
+    background-color: rgb(252, 168, 59);
+    font-size: 25px;  
+}
+/* registration page buttons css property */
+.regis_button{
+    font-size: 15px;
+}
+/* unvisited link */
+a:link{
+    color: white;
+}
+/* visited link */
+a:visited{
+    color:goldenrod;
+}
+/* mouse over link */
+a:hover{
+    font-size:25px;
+    background-color: purple;
+    color:silver;
+}
+/*selected link*/
+a:active{
+    color:red;
+}
